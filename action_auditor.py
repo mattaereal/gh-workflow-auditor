@@ -1,10 +1,11 @@
 from pathlib import Path
 import re
+import os
 
 def read_actions_file():
     array_of_usernames = []
     actions_path = os.path.join(os.path.dirname(__file__), 'actions.txt')
-    with open(actions_path, 'r') as lines::
+    with open(actions_path, 'r') as lines:
         for line in lines:
             username = line.split('/')[0]
             username_regex = re.compile("[A-Za-z0-9-]*")

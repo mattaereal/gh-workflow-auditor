@@ -1,4 +1,5 @@
 from workflow import WorkflowParser, WorkflowVulnAudit
+import os
 
 vuln_analyzer = WorkflowVulnAudit()
 

@@ -1,6 +1,7 @@
 import json
 import re
 import yaml
+import os
 
 class WorkflowParser():
     def __init__(self, yaml_content: str):
